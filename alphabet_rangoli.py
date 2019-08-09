@@ -3,17 +3,18 @@ def get_char(index):
 
 
 def print_rangoli(size):
-    alphbet_nubmers = list(range(size))
+    alphabet_nubmers = list(range(size))
     strings = []
-    alphbet_nubmers.reverse()
+    alphabet_nubmers.reverse()
 
     if size == 1:
         print (get_char(0))
         return
 
     string = ""
-    for j in alphbet_nubmers:
-        char = get_char(j)
+
+    for char_index in alphabet_nubmers:
+        char = get_char(char_index)
         total_string = "{0:-^{1}}".format("{0}-{1}-{2}".format(string, char, string[::-1]), 2*size-1+2*size - 2)
         string = "{0}-{1}".format(string, char).strip('-')
         print(total_string)

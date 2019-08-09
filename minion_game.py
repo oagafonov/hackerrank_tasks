@@ -26,6 +26,4 @@ def minion_game(string):
 
 if __name__ == '__main__':
     s = input()
-    #s = "BANANA"
-    # test(s)
     minion_game(s)

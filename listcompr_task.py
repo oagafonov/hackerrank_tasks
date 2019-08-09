@@ -15,6 +15,5 @@ def text_sort(c):
     return ord(c)
 
 
-#text = input()
-text = 'Sorting1234'
+text = input()
 print(''.join(sorted(text, key=text_sort)))

@@ -15,4 +15,4 @@ if __name__ == "__main__":
         eval_value = f's.{command}({args})'
         eval(eval_value)
 
-    print(reduce(lambda a,b: a+b, s, 0))
+    print(reduce(lambda a, b: a+b, s, 0))
